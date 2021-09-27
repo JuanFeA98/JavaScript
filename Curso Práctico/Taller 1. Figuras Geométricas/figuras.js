@@ -12,7 +12,7 @@ console.log(`El área del cuadrado es de ${areaCuadrado} unidades cuadradas.`)
 // let cuadrado = document.getElementById('Cuadrado')
 // cuadrado.innerHTML=ladoCuadrado
 
-// Triangulo
+// Triangulo 9:16
 
 let baseTriangulo = parseInt(prompt('Cuanto mide la base del triangulo?'))
 console.log(`La base del triangulo mide ${baseTriangulo} unidades.`)
