@@ -13,7 +13,7 @@ console.groupEnd()
 // let cuadrado = document.getElementById('Cuadrado')
 // cuadrado.innerHTML=ladoCuadrado
 
-// Triangulo 9:16
+// Triangulo 
 
 console.group('Triángulo')
 let baseTriangulo = parseInt(prompt('Cuanto mide la base del triangulo?'))
@@ -33,9 +33,11 @@ let areaTriangulo = (baseTriangulo * alturaTriangulo)/2
 console.log(`El área del triangulo es de ${areaTriangulo.toFixed(2)} unidades cuadradas.`)
 console.groupEnd()
 
-// Circulo 
+// Circulo 11:22
 
-let lado_circulo
+let radioCirculo = parseInt(prompt('Cuánto mide el radio del circulo?'))
+
+let areaCirculo = Math.PI * (radioCirculo**2)
 
 
 
