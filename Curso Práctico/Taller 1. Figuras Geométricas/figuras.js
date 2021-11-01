@@ -1,54 +1,50 @@
 // Cuadrado
+function calcular_cuadrado(operation){
+    let lado = document.getElementById('cuadrado');
+    let value = lado.value;
 
-function cuadrado(lado) {
-    var area = lado * lado;
-    var perimetro = lado * 4;
-    return [area, perimetro];
+    let perimetro = value * 4;
+    let area = value * value; 
+
+    if (operation == 'perimetro'){
+        alert(perimetro.toFixed(2))
+    } else {
+        alert(area.toFixed(2))
+    }
+
 }
-
-function triangulo(base, altura) {
-    var area = (base * altura) / 2;
-    var perimetro = base * 3;
-    return [area, perimetro];
-}
-
-function circulo(radio) {
-    var area = Math.PI * (radio * radio);
-    var perimetro = 2 * Math.PI * radio;
-    return [area, perimetro];
-}
-
-// Cuadrado
-
-console.group('Cuadrado')
-
-    console.log(`El área del cuadrado es de ${cuadrado(10)[0]} unidades.`)
-    console.log(`El perimetro del cuadrado es de ${cuadrado(10)[1]} unidades.`)
-
-console.groupEnd()
 
 // Triangulo
+function calcular_triangulo(operation) {
+    let base = document.getElementById('triangulo_base');
+    let value_base = base.value;
+    
+    let altura = document.getElementById('triangulo_altura');
+    let value_altura = altura.value;
 
-console.group('Triangulo')
+    var area = (value_base * value_altura) / 2;
+    var perimetro = value_base * 3;
 
-    console.log(`El área del triangulo es de ${triangulo(10, 5)[0]} unidades.`)
-    console.log(`El perimetro del triangulo es de ${triangulo(10, 5)[1]} unidades.`)
-
-console.groupEnd()
+    if (operation == 'perimetro'){
+        alert(perimetro.toFixed(2))
+    } else {
+        alert(area.toFixed(2))
+    }
+}
 
 // Circulo
 
-console.group('Circulo')
+function calcular_circulo(operation){
+    let radio = document.getElementById('circulo');
+    let value = radio.value;
 
-    console.log(`El área del circulo es de ${circulo(10)[0].toFixed(2)} unidades.`)
-    console.log(`El perimetro del circulo es de ${circulo(10)[1].toFixed(2)} unidades.`)
+    var area = Math.PI * (value * value);
+    var perimetro = 2 * Math.PI * value;
 
-console.groupEnd()
+    if (operation == 'area'){
+        alert(area.toFixed(2))
+    } else {
+        alert(perimetro.toFixed(2))
+    }
 
-
-
-
-
-
-
-
+}
