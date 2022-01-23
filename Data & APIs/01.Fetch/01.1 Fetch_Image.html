@@ -13,7 +13,7 @@
         console.log('Fetch a rainbow');
         
         async function catchImage(){
-            const response = await fetch('rainbow.jpg');
+            const response = await fetch('sources/rainbow.jpg');
             const blob = await response.blob();
             document.getElementById('rainbow').src = URL.createObjectURL(blob);
         }

@@ -13,7 +13,7 @@
         console.log('Fetch a text');
 
         async function fetch_text(){
-            const response =await fetch('poem.txt');
+            const response =await fetch('sources/poem.txt');
             const text = await response.text();
             document.getElementById('poem').innerText = text;
         }
